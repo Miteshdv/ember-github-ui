@@ -1,0 +1,12 @@
+<h2>My Favorite Orgs</h2>
+
+<ul>
+  {{#each content as |o|}}
+    {{github-org
+      org=o
+      on-fav-clicked='favoriteClicked'}}
+  {{/each}}
+
+</ul>
+
+{{outlet}}

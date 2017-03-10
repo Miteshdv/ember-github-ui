@@ -1,0 +1,10 @@
+{{outlet}}
+
+
+<p>Contributors</p>
+
+<ul class='contributors'>
+  {{#each content as |contributor|}}
+    <li>{{contributor.login}}</li>
+  {{/each}}
+</ul>
